@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name | Research Website</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:'Poppins', sans-serif;
+      background:#f5f7fb;
+      color:#222;
+      line-height:1.7;
+    }
+
+    header{
+      background:linear-gradient(135deg,#0f172a,#1e3a8a);
+      color:white;
+      padding:60px 10%;
+    }
+
+    .hero{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:40px;
+      flex-wrap:wrap;
+    }
+
+    .hero-text h1{
+      font-size:3rem;
+      margin-bottom:10px;
+    }
+
+    .hero-text h3{
+      font-weight:400;
+      color:#cbd5e1;
+      margin-bottom:20px;
+    }
+
+    .hero-text p{
+      max-width:700px;
+    }
+
+    .profile-img{
+      width:220px;
+      height:220px;
+      border-radius:50%;
+      object-fit:cover;
+      border:5px solid white;
+      box-shadow:0 8px 25px rgba(0,0,0,0.3);
+    }
+
+    nav{
+      background:white;
+      padding:15px 10%;
+      position:sticky;
+      top:0;
+      z-index:1000;
+      box-shadow:0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    nav ul{
+      display:flex;
+      gap:30px;
+      list-style:none;
+      flex-wrap:wrap;
+    }
+
+    nav a{
+      text-decoration:none;
+      color:#111827;
+      font-weight:500;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#2563eb;
+    }
+
+    section{
+      padding:70px 10%;
+    }
+
+    .section-title{
+      font-size:2rem;
+      margin-bottom:30px;
+      color:#0f172a;
+      position:relative;
+    }
+
+    .section-title::after{
+      content:"";
+      position:absolute;
+      left:0;
+      bottom:-10px;
+      width:70px;
+      height:4px;
+      background:#2563eb;
+      border-radius:10px;
+    }
+
+    .card{
+      background:white;
+      padding:30px;
+      border-radius:18px;
+      box-shadow:0 5px 20px rgba(0,0,0,0.07);
+      margin-bottom:25px;
+    }
+
+    .publication{
+      margin-bottom:20px;
+    }
+
+    .publication h4{
+      color:#1e3a8a;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:25px;
+    }
+
+    footer{
+      background:#0f172a;
+      color:white;
+      text-align:center;
+      padding:30px;
+      margin-top:40px;
+    }
+
+    .social-links a{
+      margin-right:15px;
+      text-decoration:none;
+      color:#2563eb;
+      font-weight:500;
+    }
+
+    @media(max-width:768px){
+      .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+      }
+
+      .hero-text h1{
+        font-size:2.3rem;
+      }
+
+      nav ul{
+        justify-content:center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Your Name</h1>
+        <h3>PhD Researcher | Molecular Magnetism | Machine Learning</h3>
+
+        <p>
+          Welcome to my academic website. My research focuses on molecular
+          magnetism, machine learning driven molecular design, and generative AI
+          approaches for magnetic materials.
+        </p>
+      </div>
+
+      <img src="profile.jpg" alt="Profile Photo" class="profile-img">
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="card">
+      <p>
+        I am currently pursuing my PhD in molecular magnetism. My work combines
+        computational chemistry, machine learning, and inverse molecular design
+        to discover next-generation magnetic materials.
+      </p>
+    </div>
+  </section>
+
+  <section id="research">
+    <h2 class="section-title">Research Interests</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>Molecular Magnetism</h3>
+        <p>
+          Study of single molecule magnets, zero-field splitting,
+          magnetic anisotropy, and exchange interactions.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Machine Learning</h3>
+        <p>
+          Application of graph neural networks and deep learning
+          for magnetic property prediction.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Generative AI</h3>
+        <p>
+          Inverse design of molecular systems using generative models,
+          VAEs, and genetic algorithms.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="publications">
+    <h2 class="section-title">Publications</h2>
+
+    <div class="card publication">
+      <h4>Title of Your Paper</h4>
+      <p>
+        Your Name, Co-author Name
+      </p>
+      <p>
+        <i>Journal Name</i>, 2026
+      </p>
+    </div>
+
+    <div class="card publication">
+      <h4>Another Research Article</h4>
+      <p>
+        Your Name, Co-author Name
+      </p>
+      <p>
+        <i>Journal Name</i>, 2025
+      </p>
+    </div>
+
+  </section>
+
+  <section id="awards">
+    <h2 class="section-title">Awards & Achievements</h2>
+
+    <div class="card">
+      <ul>
+        <li>Best Poster Award – Conference Name (2025)</li>
+        <li>Research Fellowship – Organization Name</li>
+        <li>Travel Grant – International Conference</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="card">
+
+      <p><b>Email:</b> yourmail@gmail.com</p>
+      <p><b>Institution:</b> Your University</p>
+
+      <br>
+
+      <div class="social-links">
+        <a href="#">Google Scholar</a>
+        <a href="#">ORCID</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Your Name | Academic Website</p>
+  </footer>
+
+</body>
+</html>
