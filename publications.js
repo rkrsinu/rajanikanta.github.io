@@ -15,7 +15,9 @@ async function loadPublications() {
     data.forEach(pub => {
 
         if (!grouped[pub.year]) {
+
             grouped[pub.year] = [];
+
         }
 
         grouped[pub.year].push(pub);
@@ -79,7 +81,10 @@ async function loadPublications() {
 
                     <div>
 
-                        <img src="${pub.image}" class="toc-img">
+                        <img 
+                        src="${pub.image}" 
+                        class="toc-img"
+                        onerror="this.src='images/default.jpg'">
 
                     </div>
 
