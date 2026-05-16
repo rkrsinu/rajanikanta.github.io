@@ -3,15 +3,19 @@ import json
 
 SCHOLAR_ID = "H2VrG5gAAAAJ"
 
+print("Fetching author...")
+
 author = scholarly.search_author_id(SCHOLAR_ID)
 
 author = scholarly.fill(author)
 
 publications = []
 
-for pub in author['publications']:
+for i, pub in enumerate(author['publications']):
 
     try:
+
+        print(f"Fetching publication {i+1}")
 
         filled_pub = scholarly.fill(pub)
 
@@ -23,7 +27,14 @@ for pub in author['publications']:
 
         year = bib.get('pub_year', '')
 
-        journal = bib.get('journal', bib.get('conference', ''))
+        journal = (
+            bib.get('journal')
+            or bib.get('conference')
+            or bib.get('booktitle')
+            or ''
+        )
+
+        pub_url = filled_pub.get('pub_url', '#')
 
         publications.append({
 
@@ -31,17 +42,27 @@ for pub in author['publications']:
             "title": title,
             "authors": authors,
             "journal": journal,
-            "link": filled_pub.get('pub_url', '#'),
+            "link": pub_url,
             "image": "default.jpg"
 
         })
 
     except Exception as e:
 
-        print("Error:", e)
+        print("Error fetching publication:", e)
+
+publications.sort(
+    key=lambda x: x["year"],
+    reverse=True
+)
 
 with open("publications.json", "w", encoding="utf-8") as f:
 
-    json.dump(publications, f, indent=2, ensure_ascii=False)
+    json.dump(
+        publications,
+        f,
+        indent=2,
+        ensure_ascii=False
+    )
 
-print("publications.json updated")
+print("publications.json updated successfully")
