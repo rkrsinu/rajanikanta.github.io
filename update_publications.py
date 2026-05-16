@@ -86,7 +86,7 @@ for pub in author['publications']:
             "ChemRxiv" in journal
         ):
 
-            print("\nSkipping ChemRxiv paper:")
+            print("\nSkipping ChemRxiv:")
             print(title)
 
             continue
@@ -156,11 +156,18 @@ for pub in author['publications']:
 
 # ==========================================
 # SORT:
-# OLDEST -> NEWEST
+# NEWEST FIRST
 # ==========================================
 
 temp_publications.sort(
-    key=lambda x: x["year"]
+
+    key=lambda x: (
+        x["year"],
+        x["title"]
+    ),
+
+    reverse=True
+
 )
 
 # ==========================================
@@ -176,33 +183,37 @@ total_papers = len(temp_publications)
 publications = []
 
 # ==========================================
-# ASSIGN IMAGE NUMBERS
+# ASSIGN WEBSITE NUMBER
 # ==========================================
 
 for idx, pub in enumerate(temp_publications):
 
     # ----------------------------------
-    # IMAGE NUMBERING
-    # oldest -> pub_1
-    # newest -> pub_N
+    # WEBSITE NUMBER
     # ----------------------------------
 
-    image_number = idx + 1
+    publication_number = (
+        total_papers - idx
+    )
+
+    # ----------------------------------
+    # IMAGE FILES
+    # ----------------------------------
 
     jpg_file = (
-        f"images/pub_{image_number}.jpg"
+        f"images/pub_{publication_number}.jpg"
     )
 
     jpeg_file = (
-        f"images/pub_{image_number}.jpeg"
+        f"images/pub_{publication_number}.jpeg"
     )
 
     png_file = (
-        f"images/pub_{image_number}.png"
+        f"images/pub_{publication_number}.png"
     )
 
     # ----------------------------------
-    # IMAGE CHECK
+    # CHECK IMAGE EXISTS
     # ----------------------------------
 
     if os.path.exists(jpg_file):
@@ -222,10 +233,12 @@ for idx, pub in enumerate(temp_publications):
         image_path = "images/default.jpg"
 
     print(
-        f"\nAssigned image for paper {image_number}:"
+        f"\nPublication No: {publication_number}"
     )
 
-    print(image_path)
+    print(
+        f"Assigned Image: {image_path}"
+    )
 
     # ----------------------------------
     # STORE FINAL DATA
@@ -246,16 +259,6 @@ for idx, pub in enumerate(temp_publications):
         "image": image_path
 
     })
-
-# ==========================================
-# FINAL SORT:
-# NEWEST FIRST FOR WEBSITE
-# ==========================================
-
-publications.sort(
-    key=lambda x: x["year"],
-    reverse=True
-)
 
 # ==========================================
 # SAVE JSON
