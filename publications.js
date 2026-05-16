@@ -4,12 +4,24 @@ async function loadPublications() {
 
     let data = await response.json();
 
-    // Sort publications by year descending
-    data.sort((a, b) => b.year - a.year);
+    // Sort newest first
+    data.sort((a, b) => {
 
-    const container = document.getElementById("publicationsContainer");
+        if (b.year !== a.year) {
+            return b.year - a.year;
+        }
 
-    // Group by year
+        return 0;
+    });
+
+    const container = document.getElementById(
+        "publicationsContainer"
+    );
+
+    // ======================================
+    // GROUP BY YEAR
+    // ======================================
+
     const grouped = {};
 
     data.forEach(pub => {
@@ -24,28 +36,49 @@ async function loadPublications() {
 
     });
 
-    // Total publication count
+    // ======================================
+    // TOTAL PAPER COUNT
+    // ======================================
+
     let totalPapers = data.length;
+
+    // ======================================
+    // LOOP YEARS
+    // ======================================
 
     Object.keys(grouped)
         .sort((a, b) => b - a)
         .forEach(year => {
 
-            // Year Heading
+            // -------------------------------
+            // YEAR TITLE
+            // -------------------------------
+
             const yearTitle = document.createElement("h2");
 
             yearTitle.innerHTML = `[ ${year} ]`;
 
-            yearTitle.style.margin = "50px 0 30px 0";
+            yearTitle.style.margin =
+                "50px 0 30px 0";
+
             yearTitle.style.color = "red";
-            yearTitle.style.textAlign = "center";
-            yearTitle.style.fontSize = "2.2rem";
+
+            yearTitle.style.textAlign =
+                "center";
+
+            yearTitle.style.fontSize =
+                "2.2rem";
 
             container.appendChild(yearTitle);
 
+            // -------------------------------
+            // PAPERS
+            // -------------------------------
+
             grouped[year].forEach(pub => {
 
-                const div = document.createElement("div");
+                const div =
+                    document.createElement("div");
 
                 div.className = "pub-card";
 
@@ -57,7 +90,8 @@ async function loadPublications() {
 
                         <div class="pub-title">
 
-                            ${totalPapers}. "${pub.title}"
+                            ${totalPapers}. 
+                            "${pub.title}"
 
                         </div>
 
@@ -69,12 +103,17 @@ async function loadPublications() {
 
                         <div class="pub-journal">
 
-                            ${pub.journal}
+                            <i>${pub.journal}</i>
 
                         </div>
 
-                        <a href="${pub.link}" target="_blank">
+                        <br>
+
+                        <a href="${pub.link}" 
+                        target="_blank">
+
                             View Paper
+
                         </a>
 
                     </div>
@@ -84,7 +123,10 @@ async function loadPublications() {
                         <img 
                         src="${pub.image}" 
                         class="toc-img"
-                        onerror="this.src='images/default.jpg'">
+
+                        onerror="
+                        this.src='images/default.jpg'
+                        ">
 
                     </div>
 
