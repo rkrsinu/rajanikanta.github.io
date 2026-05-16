@@ -1,50 +1,10 @@
 [
   {
-    "year": 2024,
-    "title": "Structural Phase Transition in 0D (3, 5-DMP) 2Bi1–x Sb x Cl5 Metal Halides: Expression of the Lone Pair Effect and Polyhedral Distortion",
-    "authors": "Subhasish Sahoo and Rajanikanta Rana and Saroj L Samal",
-    "journal": "Inorganic Chemistry 63 (16), 7364–7377",
-    "link": "https://pubs.acs.org/doi/abs/10.1021/acs.inorgchem.4c00281",
-    "image": "images/default.jpg"
-  },
-  {
-    "year": 2024,
-    "title": "A machine learning approach to decipher the origin of magnetic anisotropy in three-coordinate cobalt single-ion magnets",
-    "authors": "Gopalan Rajaraman and Rajanikanta Rana and Abinash Swain and Garima Bangar",
-    "journal": "Unknown Journal 2024 (0229)",
-    "link": "https://chemrxiv.org/doi/abs/10.26434/chemrxiv-2024-97555",
-    "image": "images/default.jpg"
-  },
-  {
-    "year": 2024,
-    "title": "(C3H7NH3) 4Bi1− xSbxI9: 0D Hybrid Halide Perovskite Like Compounds with Isolated Triiodide Units",
-    "authors": "Abinash Pradhan and Rajanikanta Rana and Gopalan Rajaraman and Monalisa Pradhan and Saroj L Samal",
-    "journal": "Dalton Transactions 53, 13628-13637",
-    "link": "https://pubs.rsc.org/en/content/articlehtml/2024/dt/d4dt01692k",
-    "image": "images/default.jpg"
-  },
-  {
-    "year": 2024,
-    "title": "Synthesis, structure, and magnetic properties of diamagnetic Co (iii) ion-based heterometallic Co III–Ln III (Ln= Dy, Tb, Ho, Er) complexes",
-    "authors": "Nandini Barman and Purbashree Halder and Subrata Mukhopadhyay and Bjoern Schwarz and Enrique Colacio and Rajanikanta Rana and Gopalan Rajaraman and Joydeb Goura",
-    "journal": "New Journal of Chemistry 48 (36), 15735-15746",
-    "link": "https://pubs.rsc.org/en/content/articlehtml/2024/nj/d4nj02058h",
-    "image": "images/default.jpg"
-  },
-  {
-    "year": 2024,
-    "title": "Achieving Ambient Stability and Suppressing Spin-Phonon Coupling in Dyprosocenium SIMs via MOF Encapsulation",
-    "authors": "Gopalan Rajaraman and Reshma Jose and Garima Bangar and Rajanikanta Rana",
-    "journal": "Unknown Journal 2024 (0227)",
-    "link": "https://chemrxiv.org/doi/10.26434/chemrxiv-2024-n74xl",
-    "image": "images/default.jpg"
-  },
-  {
-    "year": 2024,
-    "title": "Effect of variation of substitution groups attached on benzoxazole ligands on relaxation dynamics of a family of nona-coordinate mononuclear dysprosium zero-field single-molecule magnets",
-    "authors": "Bianying Niu and Xuexue Li and Rajanikanta Rana and Jintao Zhang and Shirui Chen and Hongshan Ke and Lin Sun and Gang Xie and Sanping Chen and Gopalan Rajaraman",
-    "journal": "Journal of Molecular Structure 1317, 139115",
-    "link": "https://www.sciencedirect.com/science/article/pii/S0022286024016338",
+    "year": 2026,
+    "title": "Uncovering Giant Magnetic Anisotropy in Co (II) Single-Ion Magnets via Combined Ab Initio and Machine-Learning Approaches",
+    "authors": "Rajanikanta Rana and Abinash Swain and Garima Bangar and Gopalan Rajaraman",
+    "journal": "Inorganic Chemistry 65 (12), 7058–7069",
+    "link": "https://pubs.acs.org/doi/abs/10.1021/acs.inorgchem.6c01031",
     "image": "images/default.jpg"
   },
   {
@@ -129,14 +89,6 @@
   },
   {
     "year": 2025,
-    "title": "Accurate Machine Learning Predictions of Magnetization Barriers and Relaxation Times in Dnh (n= 4–6) Dy (III) Single-Molecule Magnets",
-    "authors": "Gopalan Rajaraman and Rajanikanta Rana",
-    "journal": "Unknown Journal 2025 (1008)",
-    "link": "https://chemrxiv.org/doi/abs/10.26434/chemrxiv-2025-h913v",
-    "image": "images/default.jpg"
-  },
-  {
-    "year": 2025,
     "title": "Understanding the effect of hydrogen bonding on the structural transition and emission properties in zero-dimensional hybrid metal halides:(3, 5-DMP) 3BiX6 (X= Cl, Br, I)",
     "authors": "Subhasish Sahoo and Rajanikanta Rana and Chakali Srinivas and Parameswar Krishnan Iyer and Laxmipriya Dash and Himansu S Biswal and Saroj L Samal",
     "journal": "Dalton Transactions 54, 15726-15744",
@@ -144,11 +96,35 @@
     "image": "images/default.jpg"
   },
   {
-    "year": 2026,
-    "title": "Uncovering Giant Magnetic Anisotropy in Co (II) Single-Ion Magnets via Combined Ab Initio and Machine-Learning Approaches",
-    "authors": "Rajanikanta Rana and Abinash Swain and Garima Bangar and Gopalan Rajaraman",
-    "journal": "Inorganic Chemistry 65 (12), 7058–7069",
-    "link": "https://pubs.acs.org/doi/abs/10.1021/acs.inorgchem.6c01031",
+    "year": 2024,
+    "title": "Structural Phase Transition in 0D (3, 5-DMP) 2Bi1–x Sb x Cl5 Metal Halides: Expression of the Lone Pair Effect and Polyhedral Distortion",
+    "authors": "Subhasish Sahoo and Rajanikanta Rana and Saroj L Samal",
+    "journal": "Inorganic Chemistry 63 (16), 7364–7377",
+    "link": "https://pubs.acs.org/doi/abs/10.1021/acs.inorgchem.4c00281",
+    "image": "images/default.jpg"
+  },
+  {
+    "year": 2024,
+    "title": "(C3H7NH3) 4Bi1− xSbxI9: 0D Hybrid Halide Perovskite Like Compounds with Isolated Triiodide Units",
+    "authors": "Abinash Pradhan and Rajanikanta Rana and Gopalan Rajaraman and Monalisa Pradhan and Saroj L Samal",
+    "journal": "Dalton Transactions 53, 13628-13637",
+    "link": "https://pubs.rsc.org/en/content/articlehtml/2024/dt/d4dt01692k",
+    "image": "images/default.jpg"
+  },
+  {
+    "year": 2024,
+    "title": "Synthesis, structure, and magnetic properties of diamagnetic Co (iii) ion-based heterometallic Co III–Ln III (Ln= Dy, Tb, Ho, Er) complexes",
+    "authors": "Nandini Barman and Purbashree Halder and Subrata Mukhopadhyay and Bjoern Schwarz and Enrique Colacio and Rajanikanta Rana and Gopalan Rajaraman and Joydeb Goura",
+    "journal": "New Journal of Chemistry 48 (36), 15735-15746",
+    "link": "https://pubs.rsc.org/en/content/articlehtml/2024/nj/d4nj02058h",
+    "image": "images/default.jpg"
+  },
+  {
+    "year": 2024,
+    "title": "Effect of variation of substitution groups attached on benzoxazole ligands on relaxation dynamics of a family of nona-coordinate mononuclear dysprosium zero-field single-molecule magnets",
+    "authors": "Bianying Niu and Xuexue Li and Rajanikanta Rana and Jintao Zhang and Shirui Chen and Hongshan Ke and Lin Sun and Gang Xie and Sanping Chen and Gopalan Rajaraman",
+    "journal": "Journal of Molecular Structure 1317, 139115",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0022286024016338",
     "image": "images/default.jpg"
   }
 ]
