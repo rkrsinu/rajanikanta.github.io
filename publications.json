@@ -73,6 +73,14 @@
   },
   {
     "year": 2025,
+    "title": "Suppressing Spin–Phonon Relaxation and Enhancing Stability of Dysprosocenium Single‐Ion Magnets via Metal‐Organic Framework Confinement: A Theoretical Perspective",
+    "authors": "Garima Bangar and Reshma Jose and Rajanikanta Rana and Gopalan Rajaraman",
+    "journal": "European Journal of Inorganic Chemistry",
+    "link": "https://chemistry-europe.onlinelibrary.wiley.com/doi/abs/10.1002/ejic.202500299",
+    "image": "images/default.jpg"
+  },
+  {
+    "year": 2025,
     "title": "Effect of Solvent Coordination on the Structural Transformation and Photoluminescence Properties of Hybrid Metal Halide: (TMS)2SbBr5",
     "authors": "Suman S Das and Rajanikanta Rana and Chakali Srinivas and Parameswar Krishnan Iyer and Saroj L Samal",
     "journal": "Inorganic Chemistry",
@@ -83,7 +91,7 @@
     "year": 2025,
     "title": "Accurate Machine Learning Predictions of Magnetization Barriers and Relaxation Times in Dnh (n= 4–6) Dy (III) Single-Molecule Magnets",
     "authors": "Gopalan Rajaraman and Rajanikanta Rana",
-    "journal": "",
+    "journal": "Unknown Journal",
     "link": "https://chemrxiv.org/doi/abs/10.26434/chemrxiv-2025-h913v",
     "image": "images/default.jpg"
   },
@@ -93,14 +101,6 @@
     "authors": "Subhasish Sahoo and Rajanikanta Rana and Chakali Srinivas and Parameswar Krishnan Iyer and Laxmipriya Dash and Himansu S Biswal and Saroj L Samal",
     "journal": "Dalton Transactions",
     "link": "https://pubs.rsc.org/en/content/articlehtml/2025/dt/d5dt01876e",
-    "image": "images/default.jpg"
-  },
-  {
-    "year": 2025,
-    "title": "Suppressing Spin–Phonon Relaxation and Enhancing Stability of Dysprosocenium Single‐Ion Magnets via Metal‐Organic Framework Confinement: A Theoretical Perspective",
-    "authors": "Garima Bangar and Reshma Jose and Rajanikanta Rana and Gopalan Rajaraman",
-    "journal": "European Journal of Inorganic Chemistry",
-    "link": "https://chemistry-europe.onlinelibrary.wiley.com/doi/abs/10.1002/ejic.202500299",
     "image": "images/default.jpg"
   },
   {
@@ -115,7 +115,7 @@
     "year": 2024,
     "title": "A machine learning approach to decipher the origin of magnetic anisotropy in three-coordinate cobalt single-ion magnets",
     "authors": "Gopalan Rajaraman and Rajanikanta Rana and Abinash Swain and Garima Bangar",
-    "journal": "",
+    "journal": "Unknown Journal",
     "link": "https://chemrxiv.org/doi/abs/10.26434/chemrxiv-2024-97555",
     "image": "images/default.jpg"
   },
@@ -139,7 +139,7 @@
     "year": 2024,
     "title": "Achieving Ambient Stability and Suppressing Spin-Phonon Coupling in Dyprosocenium SIMs via MOF Encapsulation",
     "authors": "Gopalan Rajaraman and Reshma Jose and Garima Bangar and Rajanikanta Rana",
-    "journal": "",
+    "journal": "Unknown Journal",
     "link": "https://chemrxiv.org/doi/10.26434/chemrxiv-2024-n74xl",
     "image": "images/default.jpg"
   },
