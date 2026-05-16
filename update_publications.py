@@ -16,18 +16,6 @@ SCHOLAR_ID = "H2VrG5gAAAAJ"
 os.makedirs("images", exist_ok=True)
 
 # ==========================================
-# CHECK DEFAULT IMAGE
-# ==========================================
-
-default_image = "images/default.jpg"
-
-if not os.path.exists(default_image):
-
-    print("\nWARNING:")
-    print("Please add:")
-    print("images/default.jpg\n")
-
-# ==========================================
 # FETCH AUTHOR PROFILE
 # ==========================================
 
@@ -167,13 +155,19 @@ for pub in author['publications']:
         print(e)
 
 # ==========================================
-# SORT BY YEAR ASCENDING
-# OLDEST PAPER FIRST
+# SORT:
+# OLDEST -> NEWEST
 # ==========================================
 
 temp_publications.sort(
     key=lambda x: x["year"]
 )
+
+# ==========================================
+# TOTAL PAPERS
+# ==========================================
+
+total_papers = len(temp_publications)
 
 # ==========================================
 # FINAL PUBLICATIONS
@@ -187,33 +181,51 @@ publications = []
 
 for idx, pub in enumerate(temp_publications):
 
+    # ----------------------------------
+    # IMAGE NUMBERING
+    # oldest -> pub_1
+    # newest -> pub_N
+    # ----------------------------------
+
     image_number = idx + 1
 
-    manual_image = (
+    jpg_file = (
         f"images/pub_{image_number}.jpg"
+    )
+
+    jpeg_file = (
+        f"images/pub_{image_number}.jpeg"
+    )
+
+    png_file = (
+        f"images/pub_{image_number}.png"
     )
 
     # ----------------------------------
     # IMAGE CHECK
     # ----------------------------------
 
-    if os.path.exists(manual_image):
+    if os.path.exists(jpg_file):
 
-        image_path = manual_image
+        image_path = jpg_file
 
-        print(
-            f"\nUsing TOC Image: {manual_image}"
-        )
+    elif os.path.exists(jpeg_file):
+
+        image_path = jpeg_file
+
+    elif os.path.exists(png_file):
+
+        image_path = png_file
 
     else:
 
         image_path = "images/default.jpg"
 
-        print(
-            f"\nUsing Default Image for:"
-        )
+    print(
+        f"\nAssigned image for paper {image_number}:"
+    )
 
-        print(pub["title"])
+    print(image_path)
 
     # ----------------------------------
     # STORE FINAL DATA
@@ -236,7 +248,7 @@ for idx, pub in enumerate(temp_publications):
     })
 
 # ==========================================
-# SORT FINAL PUBLICATIONS
+# FINAL SORT:
 # NEWEST FIRST FOR WEBSITE
 # ==========================================
 
@@ -246,7 +258,7 @@ publications.sort(
 )
 
 # ==========================================
-# SAVE JSON FILE
+# SAVE JSON
 # ==========================================
 
 with open(
