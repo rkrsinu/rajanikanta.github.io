@@ -2,6 +2,7 @@ from scholarly import scholarly
 import json
 import os
 import time
+import re
 
 # ==========================================
 # GOOGLE SCHOLAR ID
@@ -125,8 +126,59 @@ for pub in author['publications']:
 
             journal_info += f", {pages}"
 
+        # ==================================
+        # DOI IMAGE NAME
+        # ==================================
+
+        doi_match = re.search(
+            r'10\.\S+',
+            pub_url
+        )
+
+        image_path = "images/default.jpg"
+
+        if doi_match:
+
+            doi = doi_match.group(0)
+
+            safe_doi = (
+                doi
+                .replace("/", "_")
+                .replace(".", "_")
+            )
+
+            jpg_file = (
+                f"images/{safe_doi}.jpg"
+            )
+
+            jpeg_file = (
+                f"images/{safe_doi}.jpeg"
+            )
+
+            png_file = (
+                f"images/{safe_doi}.png"
+            )
+
+            if os.path.exists(jpg_file):
+
+                image_path = jpg_file
+
+            elif os.path.exists(jpeg_file):
+
+                image_path = jpeg_file
+
+            elif os.path.exists(png_file):
+
+                image_path = png_file
+
+            print("\nDOI:")
+            print(doi)
+
+            print("Assigned Image:")
+            print(image_path)
+
         # ----------------------------------
-        # STORE TEMP DATA
+        # STORE DATA
         # ----------------------------------
 
         temp_publications.append({
@@ -140,7 +192,9 @@ for pub in author['publications']:
 
             "journal": journal_info,
 
-            "link": pub_url
+            "link": pub_url,
+
+            "image": image_path
 
         })
 
@@ -171,96 +225,6 @@ temp_publications.sort(
 )
 
 # ==========================================
-# TOTAL PAPERS
-# ==========================================
-
-total_papers = len(temp_publications)
-
-# ==========================================
-# FINAL PUBLICATIONS
-# ==========================================
-
-publications = []
-
-# ==========================================
-# ASSIGN WEBSITE NUMBER
-# ==========================================
-
-for idx, pub in enumerate(temp_publications):
-
-    # ----------------------------------
-    # WEBSITE NUMBER
-    # ----------------------------------
-
-    publication_number = (
-        total_papers - idx
-    )
-
-    # ----------------------------------
-    # IMAGE FILES
-    # ----------------------------------
-
-    jpg_file = (
-        f"images/pub_{publication_number}.jpg"
-    )
-
-    jpeg_file = (
-        f"images/pub_{publication_number}.jpeg"
-    )
-
-    png_file = (
-        f"images/pub_{publication_number}.png"
-    )
-
-    # ----------------------------------
-    # CHECK IMAGE EXISTS
-    # ----------------------------------
-
-    if os.path.exists(jpg_file):
-
-        image_path = jpg_file
-
-    elif os.path.exists(jpeg_file):
-
-        image_path = jpeg_file
-
-    elif os.path.exists(png_file):
-
-        image_path = png_file
-
-    else:
-
-        image_path = "images/default.jpg"
-
-    print(
-        f"\nPublication No: {publication_number}"
-    )
-
-    print(
-        f"Assigned Image: {image_path}"
-    )
-
-    # ----------------------------------
-    # STORE FINAL DATA
-    # ----------------------------------
-
-    publications.append({
-
-        "year": pub["year"],
-
-        "title": pub["title"],
-
-        "authors": pub["authors"],
-
-        "journal": pub["journal"],
-
-        "link": pub["link"],
-
-        "image": image_path
-
-    })
-
-# ==========================================
 # SAVE JSON
 # ==========================================
 
@@ -271,7 +235,7 @@ with open(
 ) as f:
 
     json.dump(
-        publications,
+        temp_publications,
         f,
         indent=2,
         ensure_ascii=False
