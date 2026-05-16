@@ -1,70 +1,99 @@
-async function loadPublications(){
+async function loadPublications() {
 
     const response = await fetch('publications.json');
 
-    const data = await response.json();
+    let data = await response.json();
+
+    // Sort publications by year descending
+    data.sort((a, b) => b.year - a.year);
 
     const container = document.getElementById("publicationsContainer");
 
+    // Group by year
     const grouped = {};
 
     data.forEach(pub => {
 
-        if(!grouped[pub.year]){
-
+        if (!grouped[pub.year]) {
             grouped[pub.year] = [];
-
         }
 
         grouped[pub.year].push(pub);
 
     });
 
+    // Total publication count
+    let totalPapers = data.length;
+
     Object.keys(grouped)
-    .sort((a,b)=>b-a)
-    .forEach(year => {
+        .sort((a, b) => b - a)
+        .forEach(year => {
 
-        const yearTitle = document.createElement("h2");
+            // Year Heading
+            const yearTitle = document.createElement("h2");
 
-        yearTitle.innerHTML = `[ ${year} ]`;
+            yearTitle.innerHTML = `[ ${year} ]`;
 
-        yearTitle.style.margin = "50px 0 30px 0";
+            yearTitle.style.margin = "50px 0 30px 0";
+            yearTitle.style.color = "red";
+            yearTitle.style.textAlign = "center";
+            yearTitle.style.fontSize = "2.2rem";
 
-        yearTitle.style.color = "red";
+            container.appendChild(yearTitle);
 
-        container.appendChild(yearTitle);
+            grouped[year].forEach(pub => {
 
-        grouped[year].forEach(pub => {
+                const div = document.createElement("div");
 
-            const div = document.createElement("div");
+                div.className = "pub-card";
 
-            div.className = "pub-card";
+                div.innerHTML = `
 
-            div.innerHTML = `
+                <div class="pub-grid">
 
-            <div class="pub-title">
-                ${pub.title}
-            </div>
+                    <div>
 
-            <div>
-                ${pub.authors}
-            </div>
+                        <div class="pub-title">
 
-            <div class="pub-journal">
-                ${pub.journal}
-            </div>
+                            ${totalPapers}. "${pub.title}"
 
-            <a href="${pub.link}" target="_blank">
-                View Paper
-            </a>
+                        </div>
 
-            `;
+                        <div class="pub-authors">
 
-            container.appendChild(div);
+                            ${pub.authors}
+
+                        </div>
+
+                        <div class="pub-journal">
+
+                            ${pub.journal}
+
+                        </div>
+
+                        <a href="${pub.link}" target="_blank">
+                            View Paper
+                        </a>
+
+                    </div>
+
+                    <div>
+
+                        <img src="${pub.image}" class="toc-img">
+
+                    </div>
+
+                </div>
+
+                `;
+
+                container.appendChild(div);
+
+                totalPapers--;
+
+            });
 
         });
-
-    });
 
 }
 
