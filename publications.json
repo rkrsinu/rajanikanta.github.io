@@ -1,113 +1,9 @@
 [
   {
-    "year": 2026,
-    "title": "Uncovering Giant Magnetic Anisotropy in Co (II) Single-Ion Magnets via Combined Ab Initio and Machine-Learning Approaches",
-    "authors": "Rajanikanta Rana and Abinash Swain and Garima Bangar and Gopalan Rajaraman",
-    "journal": "Inorganic Chemistry",
-    "link": "https://pubs.acs.org/doi/abs/10.1021/acs.inorgchem.6c01031",
-    "image": "images/default.jpg"
-  },
-  {
-    "year": 2025,
-    "title": "Crystal structure and optical properties of a new 0D Sb-based hybrid metal halide:(3, 5-DMP) 3Sb2Br9",
-    "authors": "Subhasish Sahoo and Rajanikanta Rana and Saroj L Samal",
-    "journal": "Journal of Solid State Chemistry",
-    "link": "https://www.sciencedirect.com/science/article/pii/S0022459624004900",
-    "image": "images/default.jpg"
-  },
-  {
-    "year": 2025,
-    "title": "Unravelling the Role of Sterically Encumbered Ligands in Tuning the Magnetic Properties of Lanthanide‐Based D5h Single‐Ion Magnets",
-    "authors": "Aheli Ghatak and Gargi Bhatt and Rajanikanta Rana and Sandeep K Gupta and Franc Meyer and Gopalan Rajaraman and Ramaswamy Murugavel",
-    "journal": "Chemistry–An Asian Journal",
-    "link": "https://aces.onlinelibrary.wiley.com/doi/abs/10.1002/asia.202401477",
-    "image": "images/default.jpg"
-  },
-  {
-    "year": 2025,
-    "title": "Synthesis and Luminescence Properties of (TMS) 4Bi1–x Sb x Br7: A Series of 0D Hybrid Metal Halides Containing S-Based Organic Cations",
-    "authors": "Suman S Das and Rajanikanta Rana and Chakali Srinivas and Aman Mishra and Parameswar Krishnan Iyer and Saroj L Samal",
-    "journal": "Crystal Growth & Design",
-    "link": "https://pubs.acs.org/doi/abs/10.1021/acs.cgd.4c01393",
-    "image": "images/default.jpg"
-  },
-  {
-    "year": 2025,
-    "title": "Pushing boundaries in single molecule magnets: an ab initio perspective on harnessing higher oxidation states for unprecedented lanthanide SMM performance",
-    "authors": "Tanu Sharma and Rajanikanta Rana and Abinash Swain and Gopalan Rajaraman",
-    "journal": "Inorganic Chemistry Frontiers",
-    "link": "https://pubs.rsc.org/en/content/articlehtml/2025/qi/d5qi00907c",
-    "image": "images/default.jpg"
-  },
-  {
-    "year": 2025,
-    "title": "Systematically study of ligands field effect on a pseudo-D6h Dy (III) single-ion magnet with axially asymmetric ligands",
-    "authors": "Xiang Zhong and Rajanikanta Rana and Tong-Kai Luo and Yan-Fang Wu and Yan Peng and Sui-Jun Liu and Gopalan Rajaraman and He-Rui Wen",
-    "journal": "Journal of Molecular Structure",
-    "link": "https://www.sciencedirect.com/science/article/pii/S0022286025009536",
-    "image": "images/default.jpg"
-  },
-  {
-    "year": 2025,
-    "title": "Understanding the Relation between the Structure and Emission Properties in 0D (2-ABI) 3Bi1–x Sb x Cl6· H2O: Impact of Structural Distortion and Stereoactivity of ns2 Lone Pairs",
-    "authors": "Subhasish Sahoo and Rajanikanta Rana and Chakali Srinivas and Parameswar Krishnan Iyer and Laxmipriya Dash and Himansu S Biswal and Saroj L Samal",
-    "journal": "Inorganic Chemistry",
-    "link": "https://pubs.acs.org/doi/abs/10.1021/acs.inorgchem.5c00116",
-    "image": "images/default.jpg"
-  },
-  {
-    "year": 2025,
-    "title": "Intercalation Induced Structural Transition and Magnetic Properties in NixNbS2",
-    "authors": "Nunavath Ramakrishna and Subhasish Sahoo and Prasanjit Agasti and Aswin Burma and Aman Mishra and Rajanikanta Rana and Saroj L Samal",
-    "journal": "Chemistry–An Asian Journal",
-    "link": "https://aces.onlinelibrary.wiley.com/doi/abs/10.1002/asia.202500796",
-    "image": "images/default.jpg"
-  },
-  {
-    "year": 2025,
-    "title": "Modulating axial anisotropy in tetrahedral Co (II) phosphonate single-ion magnets through N-donor ligand",
-    "authors": "Ananta Patwal and Rajanikanta Rana and Gopalan Rajaraman and Ramaswamy Murugavel",
-    "journal": "Dalton Transactions",
-    "link": "https://pubs.rsc.org/en/content/articlehtml/2025/dt/d5dt01461a",
-    "image": "images/default.jpg"
-  },
-  {
-    "year": 2025,
-    "title": "Suppressing Spin–Phonon Relaxation and Enhancing Stability of Dysprosocenium Single‐Ion Magnets via Metal‐Organic Framework Confinement: A Theoretical Perspective",
-    "authors": "Garima Bangar and Reshma Jose and Rajanikanta Rana and Gopalan Rajaraman",
-    "journal": "European Journal of Inorganic Chemistry",
-    "link": "https://chemistry-europe.onlinelibrary.wiley.com/doi/abs/10.1002/ejic.202500299",
-    "image": "images/default.jpg"
-  },
-  {
-    "year": 2025,
-    "title": "Effect of Solvent Coordination on the Structural Transformation and Photoluminescence Properties of Hybrid Metal Halide: (TMS)2SbBr5",
-    "authors": "Suman S Das and Rajanikanta Rana and Chakali Srinivas and Parameswar Krishnan Iyer and Saroj L Samal",
-    "journal": "Inorganic Chemistry",
-    "link": "https://pubs.acs.org/doi/abs/10.1021/acs.inorgchem.5c03844",
-    "image": "images/default.jpg"
-  },
-  {
-    "year": 2025,
-    "title": "Accurate Machine Learning Predictions of Magnetization Barriers and Relaxation Times in Dnh (n= 4–6) Dy (III) Single-Molecule Magnets",
-    "authors": "Gopalan Rajaraman and Rajanikanta Rana",
-    "journal": "Unknown Journal",
-    "link": "https://chemrxiv.org/doi/abs/10.26434/chemrxiv-2025-h913v",
-    "image": "images/default.jpg"
-  },
-  {
-    "year": 2025,
-    "title": "Understanding the effect of hydrogen bonding on the structural transition and emission properties in zero-dimensional hybrid metal halides:(3, 5-DMP) 3BiX6 (X= Cl, Br, I)",
-    "authors": "Subhasish Sahoo and Rajanikanta Rana and Chakali Srinivas and Parameswar Krishnan Iyer and Laxmipriya Dash and Himansu S Biswal and Saroj L Samal",
-    "journal": "Dalton Transactions",
-    "link": "https://pubs.rsc.org/en/content/articlehtml/2025/dt/d5dt01876e",
-    "image": "images/default.jpg"
-  },
-  {
     "year": 2024,
     "title": "Structural Phase Transition in 0D (3, 5-DMP) 2Bi1–x Sb x Cl5 Metal Halides: Expression of the Lone Pair Effect and Polyhedral Distortion",
     "authors": "Subhasish Sahoo and Rajanikanta Rana and Saroj L Samal",
-    "journal": "Inorganic Chemistry",
+    "journal": "Inorganic Chemistry 63 (16), 7364–7377",
     "link": "https://pubs.acs.org/doi/abs/10.1021/acs.inorgchem.4c00281",
     "image": "images/default.jpg"
   },
@@ -115,7 +11,7 @@
     "year": 2024,
     "title": "A machine learning approach to decipher the origin of magnetic anisotropy in three-coordinate cobalt single-ion magnets",
     "authors": "Gopalan Rajaraman and Rajanikanta Rana and Abinash Swain and Garima Bangar",
-    "journal": "Unknown Journal",
+    "journal": "Unknown Journal 2024 (0229)",
     "link": "https://chemrxiv.org/doi/abs/10.26434/chemrxiv-2024-97555",
     "image": "images/default.jpg"
   },
@@ -123,7 +19,7 @@
     "year": 2024,
     "title": "(C3H7NH3) 4Bi1− xSbxI9: 0D Hybrid Halide Perovskite Like Compounds with Isolated Triiodide Units",
     "authors": "Abinash Pradhan and Rajanikanta Rana and Gopalan Rajaraman and Monalisa Pradhan and Saroj L Samal",
-    "journal": "Dalton Transactions",
+    "journal": "Dalton Transactions 53, 13628-13637",
     "link": "https://pubs.rsc.org/en/content/articlehtml/2024/dt/d4dt01692k",
     "image": "images/default.jpg"
   },
@@ -131,7 +27,7 @@
     "year": 2024,
     "title": "Synthesis, structure, and magnetic properties of diamagnetic Co (iii) ion-based heterometallic Co III–Ln III (Ln= Dy, Tb, Ho, Er) complexes",
     "authors": "Nandini Barman and Purbashree Halder and Subrata Mukhopadhyay and Bjoern Schwarz and Enrique Colacio and Rajanikanta Rana and Gopalan Rajaraman and Joydeb Goura",
-    "journal": "New Journal of Chemistry",
+    "journal": "New Journal of Chemistry 48 (36), 15735-15746",
     "link": "https://pubs.rsc.org/en/content/articlehtml/2024/nj/d4nj02058h",
     "image": "images/default.jpg"
   },
@@ -139,7 +35,7 @@
     "year": 2024,
     "title": "Achieving Ambient Stability and Suppressing Spin-Phonon Coupling in Dyprosocenium SIMs via MOF Encapsulation",
     "authors": "Gopalan Rajaraman and Reshma Jose and Garima Bangar and Rajanikanta Rana",
-    "journal": "Unknown Journal",
+    "journal": "Unknown Journal 2024 (0227)",
     "link": "https://chemrxiv.org/doi/10.26434/chemrxiv-2024-n74xl",
     "image": "images/default.jpg"
   },
@@ -147,8 +43,112 @@
     "year": 2024,
     "title": "Effect of variation of substitution groups attached on benzoxazole ligands on relaxation dynamics of a family of nona-coordinate mononuclear dysprosium zero-field single-molecule magnets",
     "authors": "Bianying Niu and Xuexue Li and Rajanikanta Rana and Jintao Zhang and Shirui Chen and Hongshan Ke and Lin Sun and Gang Xie and Sanping Chen and Gopalan Rajaraman",
-    "journal": "Journal of Molecular Structure",
+    "journal": "Journal of Molecular Structure 1317, 139115",
     "link": "https://www.sciencedirect.com/science/article/pii/S0022286024016338",
+    "image": "images/default.jpg"
+  },
+  {
+    "year": 2025,
+    "title": "Crystal structure and optical properties of a new 0D Sb-based hybrid metal halide:(3, 5-DMP) 3Sb2Br9",
+    "authors": "Subhasish Sahoo and Rajanikanta Rana and Saroj L Samal",
+    "journal": "Journal of Solid State Chemistry 341, 125036",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0022459624004900",
+    "image": "images/default.jpg"
+  },
+  {
+    "year": 2025,
+    "title": "Unravelling the Role of Sterically Encumbered Ligands in Tuning the Magnetic Properties of Lanthanide‐Based D5h Single‐Ion Magnets",
+    "authors": "Aheli Ghatak and Gargi Bhatt and Rajanikanta Rana and Sandeep K Gupta and Franc Meyer and Gopalan Rajaraman and Ramaswamy Murugavel",
+    "journal": "Chemistry–An Asian Journal, e202401477",
+    "link": "https://aces.onlinelibrary.wiley.com/doi/abs/10.1002/asia.202401477",
+    "image": "images/default.jpg"
+  },
+  {
+    "year": 2025,
+    "title": "Synthesis and Luminescence Properties of (TMS) 4Bi1–x Sb x Br7: A Series of 0D Hybrid Metal Halides Containing S-Based Organic Cations",
+    "authors": "Suman S Das and Rajanikanta Rana and Chakali Srinivas and Aman Mishra and Parameswar Krishnan Iyer and Saroj L Samal",
+    "journal": "Crystal Growth & Design 25 (4), 1053–1065",
+    "link": "https://pubs.acs.org/doi/abs/10.1021/acs.cgd.4c01393",
+    "image": "images/default.jpg"
+  },
+  {
+    "year": 2025,
+    "title": "Pushing boundaries in single molecule magnets: an ab initio perspective on harnessing higher oxidation states for unprecedented lanthanide SMM performance",
+    "authors": "Tanu Sharma and Rajanikanta Rana and Abinash Swain and Gopalan Rajaraman",
+    "journal": "Inorganic Chemistry Frontiers 12, 5756-5769",
+    "link": "https://pubs.rsc.org/en/content/articlehtml/2025/qi/d5qi00907c",
+    "image": "images/default.jpg"
+  },
+  {
+    "year": 2025,
+    "title": "Systematically study of ligands field effect on a pseudo-D6h Dy (III) single-ion magnet with axially asymmetric ligands",
+    "authors": "Xiang Zhong and Rajanikanta Rana and Tong-Kai Luo and Yan-Fang Wu and Yan Peng and Sui-Jun Liu and Gopalan Rajaraman and He-Rui Wen",
+    "journal": "Journal of Molecular Structure 1338, 142270",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0022286025009536",
+    "image": "images/default.jpg"
+  },
+  {
+    "year": 2025,
+    "title": "Understanding the Relation between the Structure and Emission Properties in 0D (2-ABI) 3Bi1–x Sb x Cl6· H2O: Impact of Structural Distortion and Stereoactivity of ns2 Lone Pairs",
+    "authors": "Subhasish Sahoo and Rajanikanta Rana and Chakali Srinivas and Parameswar Krishnan Iyer and Laxmipriya Dash and Himansu S Biswal and Saroj L Samal",
+    "journal": "Inorganic Chemistry 64 (11), 5637–5651",
+    "link": "https://pubs.acs.org/doi/abs/10.1021/acs.inorgchem.5c00116",
+    "image": "images/default.jpg"
+  },
+  {
+    "year": 2025,
+    "title": "Intercalation Induced Structural Transition and Magnetic Properties in NixNbS2",
+    "authors": "Nunavath Ramakrishna and Subhasish Sahoo and Prasanjit Agasti and Aswin Burma and Aman Mishra and Rajanikanta Rana and Saroj L Samal",
+    "journal": "Chemistry–An Asian Journal, e00796",
+    "link": "https://aces.onlinelibrary.wiley.com/doi/abs/10.1002/asia.202500796",
+    "image": "images/default.jpg"
+  },
+  {
+    "year": 2025,
+    "title": "Modulating axial anisotropy in tetrahedral Co (II) phosphonate single-ion magnets through N-donor ligand",
+    "authors": "Ananta Patwal and Rajanikanta Rana and Gopalan Rajaraman and Ramaswamy Murugavel",
+    "journal": "Dalton Transactions 54, 15259-15270",
+    "link": "https://pubs.rsc.org/en/content/articlehtml/2025/dt/d5dt01461a",
+    "image": "images/default.jpg"
+  },
+  {
+    "year": 2025,
+    "title": "Suppressing Spin–Phonon Relaxation and Enhancing Stability of Dysprosocenium Single‐Ion Magnets via Metal‐Organic Framework Confinement: A Theoretical Perspective",
+    "authors": "Garima Bangar and Reshma Jose and Rajanikanta Rana and Gopalan Rajaraman",
+    "journal": "European Journal of Inorganic Chemistry 28, 2500299",
+    "link": "https://chemistry-europe.onlinelibrary.wiley.com/doi/abs/10.1002/ejic.202500299",
+    "image": "images/default.jpg"
+  },
+  {
+    "year": 2025,
+    "title": "Effect of Solvent Coordination on the Structural Transformation and Photoluminescence Properties of Hybrid Metal Halide: (TMS)2SbBr5",
+    "authors": "Suman S Das and Rajanikanta Rana and Chakali Srinivas and Parameswar Krishnan Iyer and Saroj L Samal",
+    "journal": "Inorganic Chemistry 64 (44), 22059-22072",
+    "link": "https://pubs.acs.org/doi/abs/10.1021/acs.inorgchem.5c03844",
+    "image": "images/default.jpg"
+  },
+  {
+    "year": 2025,
+    "title": "Accurate Machine Learning Predictions of Magnetization Barriers and Relaxation Times in Dnh (n= 4–6) Dy (III) Single-Molecule Magnets",
+    "authors": "Gopalan Rajaraman and Rajanikanta Rana",
+    "journal": "Unknown Journal 2025 (1008)",
+    "link": "https://chemrxiv.org/doi/abs/10.26434/chemrxiv-2025-h913v",
+    "image": "images/default.jpg"
+  },
+  {
+    "year": 2025,
+    "title": "Understanding the effect of hydrogen bonding on the structural transition and emission properties in zero-dimensional hybrid metal halides:(3, 5-DMP) 3BiX6 (X= Cl, Br, I)",
+    "authors": "Subhasish Sahoo and Rajanikanta Rana and Chakali Srinivas and Parameswar Krishnan Iyer and Laxmipriya Dash and Himansu S Biswal and Saroj L Samal",
+    "journal": "Dalton Transactions 54, 15726-15744",
+    "link": "https://pubs.rsc.org/en/content/articlehtml/2025/dt/d5dt01876e",
+    "image": "images/default.jpg"
+  },
+  {
+    "year": 2026,
+    "title": "Uncovering Giant Magnetic Anisotropy in Co (II) Single-Ion Magnets via Combined Ab Initio and Machine-Learning Approaches",
+    "authors": "Rajanikanta Rana and Abinash Swain and Garima Bangar and Gopalan Rajaraman",
+    "journal": "Inorganic Chemistry 65 (12), 7058–7069",
+    "link": "https://pubs.acs.org/doi/abs/10.1021/acs.inorgchem.6c01031",
     "image": "images/default.jpg"
   }
 ]

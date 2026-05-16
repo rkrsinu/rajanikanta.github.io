@@ -28,7 +28,7 @@ if not os.path.exists(default_image):
     print("images/default.jpg\n")
 
 # ==========================================
-# FETCH GOOGLE SCHOLAR PROFILE
+# FETCH AUTHOR
 # ==========================================
 
 print("\nFetching Google Scholar profile...\n")
@@ -40,26 +40,18 @@ author = scholarly.fill(author)
 print("Author Found:", author["name"])
 
 # ==========================================
-# PUBLICATIONS LIST
+# TEMP PUBLICATIONS
 # ==========================================
 
-publications = []
+temp_publications = []
 
 # ==========================================
-# LOOP OVER PAPERS
+# FETCH PUBLICATIONS
 # ==========================================
 
-for idx, pub in enumerate(author['publications']):
-
-    print("\n====================================")
-    print(f"Processing Paper {idx+1}")
-    print("====================================")
+for pub in author['publications']:
 
     try:
-
-        # ----------------------------------
-        # FETCH FULL PUBLICATION DETAILS
-        # ----------------------------------
 
         filled_pub = scholarly.fill(pub)
 
@@ -87,51 +79,55 @@ for idx, pub in enumerate(author['publications']):
             or 'Unknown Journal'
         )
 
+        # ==================================
+        # SKIP CHEMRXIV
+        # ==================================
+
+        if "ChemRxiv" in journal:
+
+            print(f"\nSkipping ChemRxiv paper:")
+            print(title)
+
+            continue
+
+        # ==================================
+        # JOURNAL DETAILS
+        # ==================================
+
+        volume = bib.get('volume', '')
+
+        issue = (
+            bib.get('number')
+            or bib.get('issue')
+            or ''
+        )
+
+        pages = bib.get('pages', '')
+
+        journal_info = journal
+
+        if volume:
+
+            journal_info += f" {volume}"
+
+        if issue:
+
+            journal_info += f" ({issue})"
+
+        if pages:
+
+            journal_info += f", {pages}"
+
         pub_url = filled_pub.get(
             'pub_url',
             '#'
         )
 
-        # ----------------------------------
-        # MANUAL TOC IMAGE CHECK
-        # ----------------------------------
+        # ==================================
+        # STORE TEMP DATA
+        # ==================================
 
-        manual_image = f"images/pub_{idx+1}.jpg"
-
-        if os.path.exists(manual_image):
-
-            image_path = manual_image
-
-            print("\nTOC Image Found:")
-            print(manual_image)
-
-        else:
-
-            image_path = "images/default.jpg"
-
-            print("\nUsing Default Image")
-
-        # ----------------------------------
-        # PRINT INFO
-        # ----------------------------------
-
-        print("\nTitle:")
-        print(title)
-
-        print("\nYear:")
-        print(year)
-
-        print("\nJournal:")
-        print(journal)
-
-        print("\nLink:")
-        print(pub_url)
-
-        # ----------------------------------
-        # STORE DATA
-        # ----------------------------------
-
-        publications.append({
+        temp_publications.append({
 
             "year": int(year)
             if year else 0,
@@ -140,36 +136,75 @@ for idx, pub in enumerate(author['publications']):
 
             "authors": authors,
 
-            "journal": journal,
+            "journal": journal_info,
 
-            "link": pub_url,
-
-            "image": image_path
+            "link": pub_url
 
         })
 
-        # ----------------------------------
-        # SMALL DELAY
-        # ----------------------------------
+        print("\nFetched:")
+        print(title)
 
         time.sleep(1)
 
     except Exception as e:
 
-        print("\nError Fetching Publication:")
+        print("\nError:")
         print(e)
 
 # ==========================================
-# SORT BY YEAR DESCENDING
+# SORT BY YEAR ASCENDING
+# OLDEST FIRST
 # ==========================================
 
-publications.sort(
-    key=lambda x: x["year"],
-    reverse=True
+temp_publications.sort(
+    key=lambda x: x["year"]
 )
 
 # ==========================================
-# SAVE JSON FILE
+# FINAL PUBLICATIONS
+# ==========================================
+
+publications = []
+
+# ==========================================
+# ASSIGN IMAGE NUMBERS
+# ==========================================
+
+for idx, pub in enumerate(temp_publications):
+
+    image_number = idx + 1
+
+    manual_image = (
+        f"images/pub_{image_number}.jpg"
+    )
+
+    if os.path.exists(manual_image):
+
+        image_path = manual_image
+
+    else:
+
+        image_path = "images/default.jpg"
+
+    publications.append({
+
+        "year": pub["year"],
+
+        "title": pub["title"],
+
+        "authors": pub["authors"],
+
+        "journal": pub["journal"],
+
+        "link": pub["link"],
+
+        "image": image_path
+
+    })
+
+# ==========================================
+# SAVE JSON
 # ==========================================
 
 with open(
