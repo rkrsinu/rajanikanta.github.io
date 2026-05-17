@@ -828,3 +828,94 @@ footer{
         transform:translateY(0px);
     }
 }
+/* ===================================== */
+/* PAGE BACKGROUND */
+/* ===================================== */
+
+.page-bg{
+
+    position:fixed;
+
+    width:100%;
+
+    height:100%;
+
+    top:0;
+
+    left:0;
+
+    background-image:url('background.gif');
+
+    background-size:cover;
+
+    background-position:center;
+
+    opacity:0.18;
+
+    z-index:-2;
+}
+
+/* ===================================== */
+/* PAGE HEADER */
+/* ===================================== */
+
+.page-header{
+
+    padding:120px 20px 60px;
+
+    text-align:center;
+}
+
+.page-header h1{
+
+    font-size:4rem;
+
+    color:white;
+}
+
+/* ===================================== */
+/* PAGE CARD */
+/* ===================================== */
+
+.page-card{
+
+    background:rgba(
+        255,
+        255,
+        255,
+        0.06
+    );
+
+    border:1px solid rgba(
+        255,
+        255,
+        255,
+        0.08
+    );
+
+    backdrop-filter:blur(12px);
+
+    border-radius:25px;
+
+    padding:45px;
+
+    margin-bottom:35px;
+}
+
+.page-card h2{
+
+    margin-bottom:20px;
+
+    font-size:2rem;
+
+    color:#60a5fa;
+}
+
+.page-card p{
+
+    line-height:2;
+
+    color:#d1d5db;
+
+    font-size:1.08rem;
+}
