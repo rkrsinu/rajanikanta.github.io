@@ -1,77 +1,128 @@
-<!DOCTYPE html>
-<html lang="en">
+async function loadPublications() {
 
-<head>
+    const response = await fetch('publications.json');
 
-<meta charset="UTF-8">
+    let data = await response.json();
 
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
+    // SORT BY YEAR DESCENDING
 
-<title>
-    Publications | Rajanikanta Rana
-</title>
+    data.sort((a, b) => b.year - a.year);
 
-<link rel="stylesheet"
-      href="style.css">
+    const container =
+        document.getElementById(
+            "publicationsContainer"
+        );
 
-</head>
+    // GROUP BY YEAR
 
-<body>
+    const grouped = {};
 
-<div class="page-bg"></div>
+    data.forEach(pub => {
 
-<nav>
+        if (!grouped[pub.year]) {
 
-    <div class="logo">
-        RR
-    </div>
+            grouped[pub.year] = [];
 
-    <ul>
+        }
 
-        <li><a href="index.html">Home</a></li>
+        grouped[pub.year].push(pub);
 
-        <li><a href="research.html">Research</a></li>
+    });
 
-        <li>
-            <a href="publications.html"
-               class="active">
-               Publications
-            </a>
-        </li>
+    // TOTAL PAPER COUNT
 
-        <li><a href="awards.html">Awards</a></li>
+    let totalPapers = data.length;
 
-        <li><a href="contact.html">Contact</a></li>
+    Object.keys(grouped)
+        .sort((a, b) => b - a)
+        .forEach(year => {
 
-    </ul>
+            // =====================================
+            // YEAR TITLE
+            // =====================================
 
-</nav>
+            const yearTitle =
+                document.createElement("h2");
 
-<section class="page-header">
+            yearTitle.className =
+                "pub-year";
 
-    <h1>
+            yearTitle.innerHTML =
+                `[ ${year} ]`;
 
-        Publications
+            container.appendChild(
+                yearTitle
+            );
 
-    </h1>
+            // =====================================
+            // EACH PUBLICATION
+            // =====================================
 
-</section>
+            grouped[year].forEach(pub => {
 
-<section class="container">
+                const div =
+                    document.createElement("div");
 
-    <div id="publicationsContainer"></div>
+                div.className =
+                    "publication-card";
 
-</section>
+                div.innerHTML = `
 
-<footer>
+                <div class="publication-grid">
 
-    © 2026 Rajanikanta Rana
+                    <!-- LEFT -->
 
-</footer>
+                    <div class="publication-left">
 
-<script src="publications.js"></script>
+                        <div class="publication-title">
 
-</body>
+                            ${totalPapers}. "${pub.title}"
 
-</html>
+                        </div>
+
+                        <div class="publication-authors">
+
+                            ${pub.authors}
+
+                        </div>
+
+                        <div class="publication-journal">
+
+                            ${pub.journal}
+
+                        </div>
+
+                        <a href="${pub.link}"
+                           target="_blank"
+                           class="paper-link">
+
+                           View Paper
+
+                        </a>
+
+                    </div>
+
+                    <!-- RIGHT -->
+
+                    <div class="publication-right">
+
+                        <img src="${pub.image}"
+                             class="publication-image">
+
+                    </div>
+
+                </div>
+
+                `;
+
+                container.appendChild(div);
+
+                totalPapers--;
+
+            });
+
+        });
+
+}
+
+loadPublications();

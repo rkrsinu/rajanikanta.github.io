@@ -1059,3 +1059,224 @@ footer{
     }
 
 }
+/* ===================================== */
+/* PUBLICATIONS */
+/* ===================================== */
+
+.pub-year{
+
+    text-align:center;
+
+    font-size:3rem;
+
+    color:#60a5fa;
+
+    margin:70px 0 40px;
+}
+
+/* ===================================== */
+/* PUBLICATION CARD */
+/* ===================================== */
+
+.publication-card{
+
+    background:rgba(
+        255,
+        255,
+        255,
+        0.06
+    );
+
+    border:1px solid rgba(
+        255,
+        255,
+        255,
+        0.08
+    );
+
+    backdrop-filter:blur(12px);
+
+    border-radius:28px;
+
+    padding:35px 40px;
+
+    margin-bottom:40px;
+
+    transition:0.3s;
+}
+
+.publication-card:hover{
+
+    transform:translateY(-5px);
+}
+
+/* ===================================== */
+/* GRID */
+/* ===================================== */
+
+.publication-grid{
+
+    display:grid;
+
+    grid-template-columns:1.8fr 260px;
+
+    gap:40px;
+
+    align-items:center;
+}
+
+/* ===================================== */
+/* TITLE */
+/* ===================================== */
+
+.publication-title{
+
+    font-size:1.65rem;
+
+    font-weight:600;
+
+    line-height:1.6;
+
+    color:#93c5fd;
+
+    margin-bottom:18px;
+}
+
+/* ===================================== */
+/* AUTHORS */
+/* ===================================== */
+
+.publication-authors{
+
+    font-size:1.12rem;
+
+    line-height:1.9;
+
+    color:#f9fafb;
+
+    margin-bottom:15px;
+}
+
+/* ===================================== */
+/* JOURNAL */
+/* ===================================== */
+
+.publication-journal{
+
+    font-size:1.1rem;
+
+    color:#facc15;
+
+    font-style:italic;
+
+    margin-bottom:28px;
+}
+
+/* ===================================== */
+/* PAPER LINK */
+/* ===================================== */
+
+.paper-link{
+
+    display:inline-block;
+
+    padding:13px 28px;
+
+    border-radius:40px;
+
+    background:#2563eb;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:500;
+
+    transition:0.3s;
+}
+
+.paper-link:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-3px);
+}
+
+/* ===================================== */
+/* IMAGE */
+/* ===================================== */
+
+.publication-right{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+.publication-image{
+
+    width:240px;
+
+    height:300px;
+
+    object-fit:contain;
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:10px;
+
+    box-shadow:0 10px 30px rgba(
+        0,
+        0,
+        0,
+        0.35
+    );
+
+    transition:0.3s;
+}
+
+.publication-image:hover{
+
+    transform:scale(1.03);
+}
+
+/* ===================================== */
+/* RESPONSIVE */
+/* ===================================== */
+
+@media(max-width:950px){
+
+    .publication-grid{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+    }
+
+    .publication-title{
+
+        font-size:1.3rem;
+    }
+
+    .publication-authors{
+
+        font-size:1rem;
+    }
+
+    .publication-journal{
+
+        font-size:1rem;
+    }
+
+    .publication-image{
+
+        width:200px;
+
+        height:250px;
+    }
+
+}
