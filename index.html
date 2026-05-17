@@ -9,7 +9,9 @@
           content="width=device-width, initial-scale=1.0">
 
     <title>
+
         Rajanikanta Rana
+
     </title>
 
     <link rel="preconnect"
@@ -26,36 +28,33 @@
 <body>
 
     <!-- ===================================== -->
-    <!-- HERO SECTION -->
+    <!-- HERO -->
     <!-- ===================================== -->
 
     <section class="hero">
 
-        <!-- SLIDESHOW -->
+        <!-- ANIMATED BACKGROUND -->
 
-        <div class="slider">
+        <div class="animated-bg">
 
-            <div class="slide active"
-                 style="background-image:url('images/slide1.jpg');">
-            </div>
-
-            <div class="slide"
-                 style="background-image:url('images/slide2.jpg');">
-            </div>
-
-            <div class="slide"
-                 style="background-image:url('images/slide3.jpg');">
-            </div>
-
-            <div class="slide"
-                 style="background-image:url('images/slide4.jpg');">
-            </div>
+            <div class="gradient gradient1"></div>
+            <div class="gradient gradient2"></div>
+            <div class="gradient gradient3"></div>
 
         </div>
 
-        <!-- OVERLAY -->
+        <!-- FLOATING ICONS -->
 
-        <div class="overlay"></div>
+        <div class="floating-icons">
+
+            <span>⚛️</span>
+            <span>🧠</span>
+            <span>🤖</span>
+            <span>🧪</span>
+            <span>💻</span>
+            <span>📊</span>
+
+        </div>
 
         <!-- NAVBAR -->
 
@@ -72,31 +71,41 @@
                 <li>
                     <a href="index.html"
                        class="active">
+
                         Home
+
                     </a>
                 </li>
 
                 <li>
                     <a href="research.html">
+
                         Research
+
                     </a>
                 </li>
 
                 <li>
                     <a href="publications.html">
+
                         Publications
+
                     </a>
                 </li>
 
                 <li>
                     <a href="awards.html">
+
                         Awards
+
                     </a>
                 </li>
 
                 <li>
                     <a href="contact.html">
+
                         Contact
+
                     </a>
                 </li>
 
@@ -154,18 +163,10 @@
 
         </div>
 
-        <!-- SCROLL INDICATOR -->
-
-        <div class="scroll-down">
-
-            <span></span>
-
-        </div>
-
     </section>
 
     <!-- ===================================== -->
-    <!-- ABOUT SECTION -->
+    <!-- ABOUT -->
     <!-- ===================================== -->
 
     <section class="about-section">
@@ -182,33 +183,61 @@
 
                 <p>
 
-                    I am a PhD researcher working in the field of
+                    I am a PhD researcher working in
                     computational chemistry,
                     molecular magnetism,
                     and artificial intelligence.
-                    My research integrates quantum chemical calculations,
-                    magnetic anisotropy studies,
-                    machine learning,
-                    and generative AI approaches
-                    for the inverse design of molecular magnetic materials.
 
                 </p>
 
                 <p>
 
-                    My current work focuses on
-                    lanthanide and transition-metal molecular magnets,
+                    My research integrates
+                    ab initio quantum chemistry,
+                    magnetic anisotropy,
                     graph neural networks,
-                    and AI-guided molecular discovery
-                    for next-generation magnetic materials.
+                    and generative AI approaches
+                    for molecular discovery.
 
                 </p>
 
             </div>
 
-            <div class="about-image">
+            <div class="about-visual">
 
-                <img src="images/lab.jpg">
+                <div class="glass-card">
+
+                    <h3>
+
+                        Research Areas
+
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            Molecular Magnetism
+                        </li>
+
+                        <li>
+                            Single-Molecule Magnets
+                        </li>
+
+                        <li>
+                            Machine Learning
+                        </li>
+
+                        <li>
+                            Generative AI
+                        </li>
+
+                        <li>
+                            Quantum Chemistry
+                        </li>
+
+                    </ul>
+
+                </div>
 
             </div>
 
@@ -246,10 +275,9 @@
 
                 <p>
 
-                    Single-molecule magnets,
-                    magnetic anisotropy,
+                    Magnetic anisotropy,
                     spin dynamics,
-                    and magnetic exchange interactions.
+                    and single-molecule magnets.
 
                 </p>
 
@@ -273,8 +301,7 @@
 
                     Graph neural networks,
                     generative AI,
-                    inverse molecular design,
-                    and machine learning for magnetic materials.
+                    and inverse molecular design.
 
                 </p>
 
@@ -299,7 +326,7 @@
                     CASSCF,
                     NEVPT2,
                     DFT,
-                    and ab initio electronic structure calculations.
+                    and electronic structure calculations.
 
                 </p>
 
@@ -319,44 +346,6 @@
         Computational Chemistry • Molecular Magnetism • AI
 
     </footer>
-
-    <!-- ===================================== -->
-    <!-- SLIDER SCRIPT -->
-    <!-- ===================================== -->
-
-    <script>
-
-        const slides = document.querySelectorAll('.slide');
-
-        let currentSlide = 0;
-
-        function showSlide(index){
-
-            slides.forEach(slide => {
-
-                slide.classList.remove('active');
-
-            });
-
-            slides[index].classList.add('active');
-
-        }
-
-        setInterval(() => {
-
-            currentSlide++;
-
-            if(currentSlide >= slides.length){
-
-                currentSlide = 0;
-
-            }
-
-            showSlide(currentSlide);
-
-        }, 5000);
-
-    </script>
 
 </body>
 
